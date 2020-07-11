@@ -37,7 +37,7 @@ POSE_PAIRS = [ ["Neck", "RShoulder"], ["Neck", "LShoulder"], ["RShoulder", "RElb
 
 net = cv2.dnn.readNetFromCaffe("pose/mpi/pose_deploy_linevec_faster_4_stages.prototxt", "pose/mpi/pose_iter_160000.caffemodel")
 
-cap = cv2.VideoCapture("input_small.mp4")
+cap = cv2.VideoCapture(0)
 
 # frame = cv2.imread(args.input)
 __, frame = cap.read()
